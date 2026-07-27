@@ -65,3 +65,14 @@ print(max(nums)) # returns the maximum value of the list
 print(sum(nums)) # returns the sum of all the values of the list
 
 print(courses.index('PSIR')) # It returns the index value of the perticular value of the list that you pass into the function
+
+# Now we'll see how to loop through the items of the list in python
+
+
+for items in courses:
+	print(items) #all the items are coming here one by one.
+
+# if we want value as well as index of that perticular value then we'll use enumerate() method and pass the list inside it as an argument
+
+for index , items in enumerate(courses):
+	print(f'item = {items} is at the {index} index')
