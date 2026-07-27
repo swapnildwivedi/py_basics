@@ -69,3 +69,14 @@ marks_b = 45
 
 print(marks_a == marks_b) # returns boolean value -->> False
 print(marks_a != marks_b) # returns boolean value -->> True
+print(marks_a > marks_b)
+
+num_1 = '100'
+num_2 = '200'
+print(num_1 + num_2)
+
+# type casting in the python
+num_1 = int(num_1)
+num_2 = int(num_2)
+
+print(int(num_1) + int(num_2))
