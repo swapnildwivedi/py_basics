@@ -48,6 +48,3 @@ print(np.sign(15))   # Output: 1
 print(np.sign(-42))  # Output: -1
 print(np.sign(0))    # Output: 0
 
-
-
-

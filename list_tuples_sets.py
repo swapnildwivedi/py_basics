@@ -23,4 +23,8 @@ print(courses) # ['history', 'civics', 'maths', 'physics', 'Comp Sci', 'PSIR']
 
 courses.append(['DSA' , 'Mechine Learning' , 'Oops']) #You can just directly put a list inside a append method in python
 
+#Or you could do it as well: 
+courses_2 = ['data science', 'artificial intelligence', 'data science']
+courses.append(courses_2) 
 print(courses) # output is ::  ['history', 'civics', 'maths', 'physics', 'Comp Sci', 'PSIR', ['DSA', 'Mechine Learning', 'Oops']]
+
