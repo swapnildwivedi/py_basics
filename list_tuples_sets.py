@@ -23,8 +23,45 @@ print(courses) # ['history', 'civics', 'maths', 'physics', 'Comp Sci', 'PSIR']
 
 courses.append(['DSA' , 'Mechine Learning' , 'Oops']) #You can just directly put a list inside a append method in python
 
-#Or you could do it as well: 
+# Or you could do it as well: 
 courses_2 = ['data science', 'artificial intelligence', 'data science']
 courses.append(courses_2) 
-print(courses) # output is ::  ['history', 'civics', 'maths', 'physics', 'Comp Sci', 'PSIR', ['DSA', 'Mechine Learning', 'Oops']]
+print(courses) # output is ::  ['history', 'civics', 'maths', 'physics', 'Comp Sci', 'PSIR', ['DSA', 'Mechine Learning', 'Oops'], ['data science', 'artificial intelligence', 'data science']]
 
+courses.remove('maths') # remove() method takes the element of the list as an argument and remove that perticular element from the list
+
+courses_2.pop() # pop() method does not take any argument and it removes the last element from the list
+courses.pop()
+print(courses)
+
+
+# there is a sort() method to sort the list in the alphabetical order and reverse() method to reverse a list 
+
+
+nums = [1,5,4,9,3]
+
+nums.sort()
+
+print(nums)
+#to sort the list in decending order
+nums.sort(reverse = True)
+
+print(nums)
+#nums.sort() (In-Place Sorting)
+#Yeh function original list ke andar hi changes kar deta hai. Yeh koi nayi list bana kar return nahi karta, bas aapki maujooda list ko order me set kar deta hai. Iska return type Python me None rakha gaya hai taaki aapko pata chale ki list modify ho chuki hai.
+
+
+
+#sorted(nums) (Returns New List)
+#Agar aap chahte ho ki aapko ek nayi sorted list mile aur original list jaisi hai waise hi rahe, toh aapko Built-in sorted() function use karna chahiye:
+#List, Tuple, String, Dictionary sab par chalta hai
+
+#------------------->
+
+#Python ki philosophy hai ki jo functions original object ko directly change (mutate) karte hain, unka return value mostly None hota hai (jaise .append(), .extend(), .reverse()).
+
+print(min(nums)) # returns the minimum value of the list
+print(max(nums)) # returns the maximum value of the list
+print(sum(nums)) # returns the sum of all the values of the list
+
+print(courses.index('PSIR')) # It returns the index value of the perticular value of the list that you pass into the function
