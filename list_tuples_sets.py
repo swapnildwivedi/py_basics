@@ -74,5 +74,7 @@ for items in courses:
 
 # if we want value as well as index of that perticular value then we'll use enumerate() method and pass the list inside it as an argument
 
-for index , items in enumerate(courses):
+for index , items in enumerate(courses):   # We can also do enumerate(courses , start = 1) with this insted if giving the value of index = 0 it will give 1 (It dosent mean that loop will start from index 1)
 	print(f'item = {items} is at the {index} index')
+
+# Tuples - Tuples are similar to list, but only difference is that we cannot modify it:(mutable = can be modified and immutable = can not be modified)
