@@ -78,3 +78,4 @@ for index , items in enumerate(courses):   # We can also do enumerate(courses , 
 	print(f'item = {items} is at the {index} index')
 
 # Tuples - Tuples are similar to list, but only difference is that we cannot modify it:(mutable = can be modified and immutable = can not be modified)
+
